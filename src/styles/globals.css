@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pokemon-logo {
+  width: 256px;
+  height: 96px;
+  margin: auto;
+}
+@media (max-width: 767.98px) {
+  .pokemon-logo {
+    width: 176px;
+    height: 64px;
+  }
+}
+.card-speciality {
+  @apply py-[4px] px-[20px] rounded-[4px] font-normal text-white text-sm;
+}
+.homePage__topPart-contents-details-card {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
+  overflow: hidden;
+  background-color: #ffffff !important;
+  color: #257bc4 !important;
+  transition: all ease-in-out 0.4s;
+}
+.homePage__topPart-contents-details-card:hover {
+  background-color: #257bc4 !important;
+  color: #ffffff !important;
+  cursor: pointer;
+}
+.homePage__topPart-contents-details-card:hover
+  .homePage__topPart-contents-details-card-image-item {
+  scale: 1.1;
+  transition: all ease-in-out 0.4s;
+}
+@media (min-width: 1340px) {
+  .homepage__lowerPart-contents-details {
+    margin-top: 110px !important;
+  }
+}
+.homepage-paragraph {
+  @apply text-base text-black text-justify font-normal;
+}
+.homepage-paragraph--updated {
+  @apply text-base text-black text-justify font-normal;
+}
+
+@media (min-width: 1138px) and (max-width: 1258px) {
+  .homepage-paragraph--updated {
+    margin-top: 40px !important;
+  }
+}
+
+@media (min-width: 1431px) and (max-width: 1503.98px) {
+  .homepage-paragraph--updated {
+    margin-top: 50px !important;
+  }
+}
+@media (min-width: 1504px) and (max-width: 1535.98px) {
+  .homepage-paragraph--updated {
+    margin-top: 70px !important;
+  }
+}
+@media (min-width: 1678px) {
+  .homepage-paragraph--updated {
+    margin-top: 30px !important;
+  }
+}
+@media (min-width: 1780px) {
+  .homepage-paragraph--updated {
+    margin-top: 50px !important;
+  }
+}
+.homepage-pokemon-image {
+  @apply h-[140px] w-[140px] lg:h-[170px] lg:w-[170px] laptop:w-[200px] laptop:h-[200px];
+}
+
+/* SinglePAge Design */
+.singlePage-card-wrapper {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
+  overflow: hidden;
+  height: 233px;
+  background: linear-gradient(to left, orange, pink);
+}
+.singlePage-card {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
+  overflow: hidden;
+  height: 225px;
+}
+.singlePage-card-title {
+  @apply text-base md:text-lg text-black font-medium mb-[10px];
+}
+.singlePage-card-value {
+  @apply text-sm md:text-base text-black font-normal capitalize mt-[5px];
+}
+@media (max-width: 766.98px) {
+  .singlePage__content-body-display {
+    order: 1 !important;
+  }
+}
+.singlePage__content-body-image {
+  position: relative;
+  transition: all ease-in-out 0.4s;
+  cursor: pointer;
+  object-fit: cover;
+}
+.singlePage__content-body-image:hover {
+  scale: 1.2;
+}
+.singlePage__content-body-image::after {
+  position: absolute;
+  width: 50%;
+  height: 42px;
+  bottom: -40px;
+  left: 100px;
+  content: "";
+  border-radius: 50%;
+  filter: blur(29px);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.singlePage-characteristics {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767.98px) {
+  .singlePage-characteristics {
+    width: 68px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+/* single page statrs */
+.stat-details-title {
+  @apply text-sm font-normal text-black;
+}
+.stat-details-percentage {
+  background: #d9d9d9;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  height: 4px;
+  margin-bottom: 10px;
+  position: relative;
+  width: 320px;
+}
+@media (min-width: 768px) {
+  .stat-details-percentage {
+    width: 340px;
+  }
+}
+.stat-details-percentage span {
+  display: block;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #30a7d7;
+  position: relative;
+  overflow: hidden;
+  transition: width 4s ease-out;
+  margin-top: 10px;
+}
+
+/* mobile design home page */
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+}
+.card-item {
+  width: 240px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.carousel-indicators {
+  display: none !important;
+}
+@media (min-width: 400px) and (max-width: 767.98px) {
+  .card-item {
+    width: 290px;
+  }
+}
+.carousel-control-prev {
+  position: relative;
+}
+.carousel-control-prev-icon {
+  background-color: #2b73b9;
+  width: 30px !important;
+  height: 30px !important;
+  position: absolute;
+  right: 30px;
+  border-radius: 50% !important;
+}
+.carousel-control-next {
+  position: relative;
+}
+.carousel-control-next-icon {
+  background-color: #2b73b9;
+  width: 30px !important;
+  height: 30px !important;
+  display: flex !important;
+  justify-content: center !important;
+  border-radius: 50%;
+  position: absolute;
+  left: 30px;
+}
+
+.carousel-button-icon {
+  width: 15px !important;
+  height: 15px !important;
+}
+a {
+  text-decoration: none !important;
+}
+.mobile-image {
+  width: 108px;
+  height: 106px;
+  margin-top: 10px;
+}
+
+/* Classnames for Types */
+.grass {
+  background: #9bcc50;
+}
+.poison {
+  background: #b97fc9;
+}
+.fire {
+  background: #fc7c23;
+}
+.flying {
+  background-image: linear-gradient(#30a7d7 50%, #bdbdbd 50%);
+}
+.water {
+  background: #4592c4;
+}
+.bug {
+  background: #729f3f;
+}
+
+/* sidebar design*/
+body {
+  height: 100%;
+  margin: 0;
+}
+.outer {
+  height: 100%;
+  overflow: hidden;
+}
+.inner {
+  height: 200%;
+  width: 100%;
+  -webkit-animation: mymove 5s linear infinite;
+  /* Safari and Chrome */
+  animation: mymove 5s linear infinite;
+  background-image: url("../assets/images/Left.png");
+  background-size: 100% 50%;
+}
+@-webkit-keyframes mymove {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 0% 100%;
+  }
+}
+@keyframes mymove {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 0% 100%;
+  }
+}
